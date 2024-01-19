@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_weight="8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deteksi Ketahanan Bangunan"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="20sp"
+                android:textColor="@android:color/darker_gray"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="24sp"
+
+                    android:textColor="@color/retangle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Kekuatan Bangunan"
+                    android:gravity="center_horizontal|bottom"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="24sp"
+                    android:id="@+id/txtKekuatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="20 g (Kuat)"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.airbnb.lottie.LottieAnimationView
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_fileName="quake2.json"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_weight="6"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDeteksi"
+
+                android:layout_width="200dp"
+                android:textSize="12dp"
+                android:padding="10dp"
+                android:drawablePadding="2dp"
+                android:drawableTop="@drawable/ic_baseline_equalizer_24"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/retangle"
+                app:cornerRadius="10dp"
+                android:textAllCaps="false"
+                android:text="Rekam"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
